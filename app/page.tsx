@@ -11,7 +11,7 @@ export default function Home() {
           <p>This is a simple example using HeroUI components.</p>
         </CardBody>
         <CardFooter className="flex justify-end gap-2">
-          <Button variant="bordered">Cancel</Button>
+          <Button variant="bordered" >Cancel</Button>
           <Button>Submit</Button>
         </CardFooter>
       </Card>
