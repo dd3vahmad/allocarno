@@ -10,11 +10,14 @@ import React from "react";
 
 const _Navbar = () => {
   return (
-    <Navbar position="static" className="rounded-full px-6 py-3 border w-full">
+    <Navbar
+      position="static"
+      className="rounded-full md:px-6 py-3 border w-full"
+    >
       <NavbarBrand>
         <p className="font-bold text-inherit">ALLOCARNO</p>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden lg:flex gap-4" justify="center">
         <NavbarItem isActive>
           <Link color="foreground" href="#">
             Home
@@ -38,7 +41,7 @@ const _Navbar = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button as={Link} href="#" className="">
+          <Button as={Link} href="#" className="border rounded-full px-5 py-2">
             Join Beta
           </Button>
         </NavbarItem>

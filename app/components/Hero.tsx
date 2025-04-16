@@ -9,12 +9,12 @@ const Hero = () => {
       </div>
       <p className="text-center text-4xl font-bold mt-24 flex flex-col gap-3">
         <span className="block">Let AI Handle</span>
-        <span className="block w-fit text-nowrap">
+        <span className="block w-fit">
           <span className="text-primary me-2">Scheduling</span>
           While You Rest
         </span>
       </p>
-      <p className="mt-12 text-center max-w-[650px] px-12">
+      <p className="mt-12 text-center max-w-[800px] px-12">
         No more manual planning. Just verified, stress-free timetables powered
         by AI, secured by Cardano, and built for real academic peace of mind.
       </p>
