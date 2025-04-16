@@ -3,6 +3,32 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-nunito-sans);
+  --font-mono: var(--font-nunito);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
   --primary: #7d7ae5;
   --secondary: #322f92;
   --gradient: linear-gradient(to right, #fafff2 30%, #dbdaff 100%);
@@ -21,8 +47,6 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    /* Keeping primary and secondary colors consistent in dark mode,
-       but you could adjust them for dark mode if needed */
     --primary: #7d7ae5;
     --secondary: #322f92;
     --gradient: linear-gradient(to right, #fafff2, #dbdaff);
@@ -37,4 +61,4 @@ body {
 
 .gradient-bg {
   background: var(--gradient);
-}
+} */
