@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center flex-1">
-      <div className="py-1 px-3 inset-2 w-fit border text-sm rounded-full bg-background">
+      <div className="py-1 px-3 inset-2 w-fit text-sm rounded-full border">
         🏆 10,000 Smart Schedules Generated
       </div>
       <p className="text-center text-4xl font-bold mt-24 flex flex-col gap-3">
@@ -30,11 +30,12 @@ const Hero = () => {
             outline: "none",
             padding: "0.2rem 1rem",
             borderRadius: "9999px",
+            background: "white",
           }}
           placeholder="Enter your email"
           type="email"
         />
-        <Button className="rounded-full text-nowrap border py-1 px-2 text-sm cursor-pointer">
+        <Button className="rounded-full text-nowrap text-white bg-primary py-1 px-2 text-sm cursor-pointer">
           Join Beta
         </Button>
       </div>

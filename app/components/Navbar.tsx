@@ -12,19 +12,19 @@ const _Navbar = () => {
   return (
     <Navbar
       position="static"
-      className="rounded-full md:px-6 py-3 border w-full"
+      className="rounded-full flex justify-between items-center md:px-6 py-3 bg-white w-full"
     >
       <NavbarBrand>
         <p className="font-bold text-inherit">ALLOCARNO</p>
       </NavbarBrand>
       <NavbarContent className="hidden lg:flex gap-4" justify="center">
         <NavbarItem isActive>
-          <Link color="foreground" href="#">
+          <Link aria-current="page" href="#">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link aria-current="page" href="#">
+          <Link color="foreground" href="#">
             About Allocarno
           </Link>
         </NavbarItem>
@@ -41,7 +41,11 @@ const _Navbar = () => {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button as={Link} href="#" className="border rounded-full px-5 py-2">
+          <Button
+            as={Link}
+            href="#"
+            className="bg-primary text-white rounded-full px-5 py-2"
+          >
             Join Beta
           </Button>
         </NavbarItem>
