@@ -1,4 +1,4 @@
-import { Button, Input } from "@heroui/react";
+import { Input } from "@heroui/react";
 import React from "react";
 
 const Hero = () => {
@@ -35,9 +35,9 @@ const Hero = () => {
           placeholder="Enter your email"
           type="email"
         />
-        <Button className="rounded-full text-nowrap text-white bg-primary py-1 px-2 text-sm cursor-pointer">
+        <button className="rounded-full w-fit text-nowrap px-2 text-white bg-primary py-1 text-sm cursor-pointer">
           Join Beta
-        </Button>
+        </button>
       </div>
     </div>
   );

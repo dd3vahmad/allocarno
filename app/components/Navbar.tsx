@@ -17,7 +17,10 @@ const _Navbar = () => {
       <NavbarBrand>
         <p className="font-bold text-inherit">ALLOCARNO</p>
       </NavbarBrand>
-      <NavbarContent className="hidden lg:flex gap-4" justify="center">
+      <NavbarContent
+        className="hidden lg:flex gap-5 font-semibold"
+        justify="center"
+      >
         <NavbarItem isActive>
           <Link aria-current="page" href="#">
             Home
