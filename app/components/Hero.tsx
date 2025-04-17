@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center flex-1">
-      <div className="py-1 px-3 inset-2 w-fit text-sm rounded-full border">
+      <div className="py-1 px-3 inset-2 w-fit text-sm rounded-full bg-slate-100 shadow-inner shadow-purple-200">
         🏆 10,000 Smart Schedules Generated
       </div>
       <p className="text-center text-4xl font-bold mt-24 flex flex-col gap-3">
