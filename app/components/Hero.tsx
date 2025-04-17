@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full flex flex-col mt-30 items-center flex-1">
+    <div className="w-full flex flex-col items-center flex-1 justify-center">
       <div className="py-1 px-3 inset-2 w-fit text-sm rounded-full bg-slate-100 shadow-inner shadow-purple-100">
         🏆 10,000 Smart Schedules Generated
       </div>
