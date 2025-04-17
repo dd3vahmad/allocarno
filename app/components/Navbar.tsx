@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Button,
   Navbar,
@@ -6,12 +8,20 @@ import {
   NavbarItem,
   Link,
 } from "@heroui/react";
-import React from "react";
+import React, { useState } from "react";
 
 const _Navbar = () => {
+  const [activeTab, setActiveTab] = useState("Home");
+  const navItems = [
+    { name: "Home", href: "#" },
+    { name: "About Allocarno", href: "#" },
+    { name: "For Universities", href: "#" },
+    { name: "Others", href: "#" },
+  ];
+
   return (
     <Navbar
-      className="rounded-full flex justify-between items-center md:px-6 py-5 bg-white w-full"
+      className="rounded-full flex justify-between items-center px-1 md:px-6 py-5 bg-white w-full"
       shouldHideOnScroll
     >
       <NavbarBrand>
@@ -21,26 +31,21 @@ const _Navbar = () => {
         className="hidden lg:flex gap-5 font-semibold"
         justify="center"
       >
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            About Allocarno
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            For Universities
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Others
-          </Link>
-        </NavbarItem>
+        {navItems.map((item, i) => (
+          <NavbarItem
+            key={i}
+            onClick={() => setActiveTab(item.name)}
+            isActive={item.name.toLowerCase() === activeTab.toLowerCase()}
+          >
+            <Link
+              className="text-secondary"
+              href={item.href}
+              aria-current={item.name === "Home" ? "page" : undefined}
+            >
+              {item.name}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:block me-3">

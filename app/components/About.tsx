@@ -35,15 +35,15 @@ const About = () => {
   ];
 
   return (
-    <div className="w-full bg-white flex flex-col justify-center items-center gap-10 py-10">
+    <div className="w-full bg-white flex flex-col justify-center items-center gap-10 py-20">
       <h2 className="text-3xl font-semibold">
         About <span className="text-primary">Allocarno</span>
       </h2>
-      <div className="flex justify-center">
+      <div className="w-fit flex flex-wrap gap-10 justify-center">
         {attributes.map((attribute, i) => (
           <div
             key={i}
-            className="flex flex-col rounded overflow-hidden shadow-md shadow-purple-100 w-[280px] gap-3 mx-5"
+            className="flex flex-col rounded overflow-hidden shadow-md shadow-purple-100 w-[280px] gap-3"
           >
             <img
               src={attribute.banner}
