@@ -11,8 +11,8 @@ import React from "react";
 const _Navbar = () => {
   return (
     <Navbar
-      position="static"
       className="rounded-full flex justify-between items-center md:px-6 py-3 bg-white w-full"
+      shouldHideOnScroll
     >
       <NavbarBrand>
         <p className="font-bold text-inherit">ALLOCARNO</p>
