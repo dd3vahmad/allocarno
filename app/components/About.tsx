@@ -43,7 +43,7 @@ const About = () => {
         {attributes.map((attribute, i) => (
           <div
             key={i}
-            className="flex flex-col rounded overflow-hidden shadow-md shadow-purple-200 w-[240px] gap-3 mx-4"
+            className="flex flex-col rounded overflow-hidden shadow-md shadow-purple-100 w-[240px] gap-3 mx-4"
           >
             <img
               src={attribute.banner}

@@ -11,7 +11,7 @@ import React from "react";
 const _Navbar = () => {
   return (
     <Navbar
-      className="rounded-full flex justify-between items-center md:px-6 py-3 bg-white w-full"
+      className="rounded-full flex justify-between items-center md:px-6 py-5 bg-white w-full"
       shouldHideOnScroll
     >
       <NavbarBrand>
@@ -43,17 +43,17 @@ const _Navbar = () => {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden lg:block me-3">
           <Button
             as={Link}
             href="#"
-            className="bg-primary text-white rounded-full px-5 py-2"
+            className="bg-primary text-white rounded-full px-4 py-2"
           >
             Join Beta
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href="#" className="border rounded-full px-5 py-2">
+          <Button as={Link} href="#" className="border rounded-full px-4 py-2">
             Log in
           </Button>
         </NavbarItem>
