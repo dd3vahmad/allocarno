@@ -1,39 +1,7 @@
 import React from "react";
-import {
-  aiScheduler,
-  blockchainRecords,
-  web3University,
-  security,
-} from "@/app/assets";
+import { attributes } from "../lib/constants";
 
 const About = () => {
-  const attributes = [
-    {
-      title: "AI-Powered Scheduling",
-      banner: aiScheduler.src,
-      description:
-        "Let artificial intelligence generate conflict-free, optimized academic timetables in seconds.",
-    },
-    {
-      title: "Blockchain-Verified Records",
-      banner: blockchainRecords.src,
-      description:
-        "Every timetable is published to the Cardano blockchain for tamper-proof validation.",
-    },
-    {
-      title: "Built for Universities",
-      banner: web3University.src,
-      description:
-        "Allocarno is designed specifically for academic environments with roles for admins, lecturers, students, and even token holders.",
-    },
-    {
-      title: "Transparent & Secure",
-      banner: security.src,
-      description:
-        "Allocarno ensures transparency, security, and traceability in one seamless platform.",
-    },
-  ];
-
   return (
     <div className="w-full bg-white flex flex-col justify-center items-center gap-10 py-20">
       <h2 className="text-3xl font-semibold">

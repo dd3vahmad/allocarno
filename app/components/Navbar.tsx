@@ -9,15 +9,10 @@ import {
   Link,
 } from "@heroui/react";
 import React, { useState } from "react";
+import { navItems } from "../lib/constants";
 
 const _Navbar = () => {
   const [activeTab, setActiveTab] = useState("Home");
-  const navItems = [
-    { name: "Home", href: "#" },
-    { name: "About Allocarno", href: "#" },
-    { name: "For Universities", href: "#" },
-    { name: "Others", href: "#" },
-  ];
 
   return (
     <Navbar
