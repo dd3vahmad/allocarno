@@ -1,14 +1,16 @@
-"use client";
-
 import { ChevronRight } from "lucide-react";
-import { useState } from "react";
 import { faqs } from "../lib/constants";
+import { Dispatch, SetStateAction } from "react";
 
-const FAQAccordion = () => {
-  const [isActive, setActive] = useState(1);
-
+const FAQAccordion = ({
+  isActive,
+  setActive,
+}: {
+  isActive: number;
+  setActive: Dispatch<SetStateAction<number>>;
+}) => {
   return (
-    <div className="flex flex-col bg-white shadow-2xl rounded w-full max-w-[540px] z-10">
+    <div className="flex flex-col bg-white rounded left-0 w-full md:w-[50%] z-20 md:absolute">
       {faqs.map((faq, i) => (
         <div
           key={i}
