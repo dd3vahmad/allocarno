@@ -43,18 +43,18 @@ const About = () => {
         {attributes.map((attribute, i) => (
           <div
             key={i}
-            className="flex flex-col rounded overflow-hidden shadow-md shadow-purple-100 w-[240px] gap-3 mx-4"
+            className="flex flex-col rounded overflow-hidden shadow-md shadow-purple-100 w-[280px] gap-3 mx-5"
           >
             <img
               src={attribute.banner}
               alt={attribute.title}
               className="w-full h-[200px] object-cover"
             />
-            <div className="px-2 mb-3">
+            <div className="px-2 mb-5">
               <h3 className="w-full text-primary font-semibold">
                 {attribute.title}
               </h3>
-              <p className="max-w-xs text-xs mt-1">{attribute.description}</p>
+              <p className="max-w-xs text-sm mt-1">{attribute.description}</p>
             </div>
           </div>
         ))}
